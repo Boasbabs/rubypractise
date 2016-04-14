@@ -1,16 +1,27 @@
-# - Write a program that prints ‘Hello World’ to the screen. 
+# 1 - Write a program that prints ‘Hello World’ to the screen. 
     def hello_world
         puts "Hello World"
     end
     hello_world
-# - Write a program that asks the user for her name and greets her with her name.
+# 2 - Write a program that asks the user for her name and greets her with her name.
     def greet_user
         print "what is your name?"
         name = gets.chomp!
         puts "Hello #{name}"
     end 
-    
-# - Modify the previous program such that only the users Alice and Bob are greeted with their names. 
+
+# 3- Modify the previous program such that only the users Alice and Bob are greeted with their names. 
+    def greet_alice_bob
+        print "what is your name?"
+        name = gets.chomp!
+        if name == "Alice"
+            puts "Good day #{name}"
+        elsif name == "Bob"
+            puts "Hello #{name}"
+        else
+            puts "what's up dude?!"
+        end   
+    end
 
 # - Write a function that takes a number n as argument and prints the sum of the numbers 1 to n 
 #  Eg: sum(20) 
