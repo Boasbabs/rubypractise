@@ -26,6 +26,15 @@
 # - Write a function that takes a number n as argument and prints the sum of the numbers 1 to n 
 #  Eg: sum(20) 
 #  --> 210 
+    def sum(n)
+        if n < 1
+            raise "arg must be > 0"
+        elsif n == 1
+            n
+        else
+            n + sum(n - 1)
+        end
+    end
 
 # - Modify the function such that only multiples of three or five, but not both are considered in the sum, e.g. 3, 5, 6, 9, 10, 12, 18 for n=19 
 #  Eg: special_sun(19) 
