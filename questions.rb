@@ -55,6 +55,15 @@
 #  3X10=30 
 #  3X11=33 
 #  3X12=36 
+    def multiplication_table(num)
+        table_number = num
+        count = 1
+        while count <= 12
+            puts "#{table_number} X #{count} = #{table_number * count}"
+            count += 1
+        end
+    end
+    multiplication_table(3)
 
 # - Write a function that takes a four digit year number as input and prints the next 100 leap years from the given year. 
 

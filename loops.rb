@@ -30,7 +30,6 @@
 	*******
 =end
 
-=begin 
 	print "Enter the size of the box: "
 	size = gets.to_i
 
@@ -41,8 +40,9 @@
 		count += 1
 	end
 	puts "*" * size
-=end
-print "How many lines of triangle do you wish to print: "
+###################################
+
+print "How many lines of triangle do you wish to print (upside down): "
 triangle_lines = gets.to_i
 
 triangle_counter = 0
@@ -50,3 +50,13 @@ while triangle_counter < triangle_lines
 	puts "#" * (triangle_lines - triangle_counter)
 	triangle_counter += 1
 end
+#####################################
+print "How many lines of triangle do you wish to print (top down): "
+triangle_lines = gets.to_i
+
+triangle_counter = 1
+while triangle_counter <= triangle_lines
+	puts "#"  * triangle_counter
+	triangle_counter += 1
+end
+
