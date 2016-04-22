@@ -108,6 +108,15 @@
 #      "###" 
 #      "##" 
 #      "#" 
+    print "How many lines of triangle do you wish to print: "
+    triangle_lines = gets.to_i
+
+    triangle_counter = 0
+    while triangle_counter < triangle_lines
+        puts "#" * (triangle_lines - triangle_counter)
+        triangle_counter += 1
+    end
+
 
 # - Given an array print all the numbers that are repeating in it. 
 #  =>  Input: [1, 2, 3, 5, 8, 4, 7, 9, 1, 4, 12, 5, 6, 5, 2, 1, 0, 8, 1] 
