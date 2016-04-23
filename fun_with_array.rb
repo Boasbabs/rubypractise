@@ -42,4 +42,4 @@ while user_line != ""
 	lines << user_line
 end
 
-puts "#{lines}"
+puts "#{lines}" 
