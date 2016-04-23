@@ -106,6 +106,11 @@
 #    "4, 4" 
 #    "3, 5" 
 #    "5, 3" 
+arrays = [1, 4, 3, 5, 4, 6, 7, 8, 3] 
+combo = arrays.combination(2).to_a
+sum_equals_eight = combo.find_all { | first, last | first + last == 8  }
+
+puts "#{sum_equals_eight}"
 
 # - Given a number(n) print out a triangle with "#" n times in the first line, n-1 times in the second line, n-2 times in the third line and so on. 
 #  =>  Input: n = 7 
